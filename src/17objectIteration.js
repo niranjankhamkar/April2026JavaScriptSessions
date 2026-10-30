@@ -15,9 +15,9 @@ for (let e in user) {
     }
 }
 console.log('-------');
-console.log(Object.keys(user)); //keys
-console.log(Object.values(user)); //values
-console.log(Object.entries(user));//key-value pair
+console.log(Object.keys(user)); //all keys //[ 'name', 'age', 'salary', 'isActive' ]
+console.log(Object.values(user)); //vall values // [ 'Tom', 20, 12.33, true ]
+console.log(Object.entries(user));//all key-value pair
 
 //JS object to JSON:
 let userJson = JSON.stringify(user, null, 2);

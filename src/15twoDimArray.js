@@ -32,8 +32,8 @@ let num = [
     [10, 20, 30, 40],
     [100, 200, 300, 400]
 ];
-for (let u of num) {
-    for (let v of u) {
+for (let u of num) {    //for row
+    for (let v of u) {  //for coloum
         process.stdout.write(v + ' ');
     }
     console.log();

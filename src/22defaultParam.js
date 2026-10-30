@@ -56,7 +56,7 @@ function add(a, b = 10) {
     return a + b;
 }
 let r1 = add(5, NaN);
-console.log(r1);
+console.log(r1);//NaN
 
 function launchBrowser(browserName) {//CHROME
     console.log('launching browser....' + browserName);

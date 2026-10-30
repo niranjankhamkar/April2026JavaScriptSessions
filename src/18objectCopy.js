@@ -5,6 +5,8 @@ let user = {
     zip: 1212,
 };
 console.log(user);
+
+
 //shallow copy/cloning of the object
 let myUser = { ...user };//uses the spread operator (...) to create 
 // a shallow copy of the user object.
@@ -13,11 +15,13 @@ user.age = 35;
 console.log('--------');
 console.log(user);
 console.log(myUser);
+console.log('----------------');
+
 let newUser = structuredClone(user); //creates a deep copy 
 // of the user object using the built-in structuredClone() function.
 //Handles nested objects and arrays correctly.
 console.log(newUser);
-console.log('----------------');
+console.log('----------------------------');
 
 let customer = {
     name: 'Manish',
@@ -33,15 +37,15 @@ let customer = {
     }
 };
 console.log(customer);
-console.log('--------------');
+console.log('------');
 let newCustomer = { ...customer };
 console.log(newCustomer);
 console.log('----------');
 newCustomer.address.city = 'Pune';
 console.log(newCustomer);
-console.log('----------');
+console.log('----------------');
 console.log(customer);
-console.log("----------");
+console.log("-----------------------");
 
 //deep copy : all levels
 let customer = {

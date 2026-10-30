@@ -12,15 +12,21 @@
 let print = () => console.log('hello world');
 print();//calling function
 
+
+
 let pop = () => {   //arrow function with {} but no need 'function' & 'return' keyword
     console.log('hello naveen');
 }
 pop();
 
+
+
+
 let test = function () {
     console.log('hello world');
 }
 test();
+
 
 //arrow function with param:
 //param: 1 param --> name
@@ -41,10 +47,14 @@ printUser('naveenautomation');
 //param: element
 let clickElement = element => {
     console.log('check the ', element, ' is visible');
+    console.log(`Yes i see ${element}`);
     console.log('click on the ', element);
     console.log('close the browser');
 };
 clickElement('loginButton');
+
+
+
 
 //add two numbers:
 //two params: x, y
@@ -73,6 +83,11 @@ console.log(r2);
 let findElement = id => `//div[@id='${id}']`;
 let xpath = findElement('naveenopencart');
 console.log(xpath);
+
+
+
+
+
 
 //launch browser: ch, ff, edge
 //browserName: 1 param
@@ -107,6 +122,10 @@ if (isBrowserLaunched) {
     console.log('enter the url: ', 'https://www.nal.com');
 }
 
+
+
+
+
 let sum = (a, b) => a + b;
 let sub = (a, b) => a - b;
 let mul = (a, b) => a * b;
@@ -116,10 +135,17 @@ console.log(t1);
 let t2 = mul(10, 20);
 console.log(t2);
 
+
+
+
+
 //give a string and convert it to lowercase...and return
 let convertToLowerCase = name => name.toLowerCase();
 let u1 = convertToLowerCase('NAVEEN AUTOMATION LABS')
 console.log(u1);
+
+
+
 
 /**
  * @param  {...string} empNames 
@@ -129,6 +155,11 @@ let printEmpList = (...empNames) => {  // ... spread parameter
     console.log(empNames);
 };
 printEmpList('senthil', 'pooja', 'nitin', 'deepti');
+
+
+
+
+
 
 //arrow function with objects:
 let user = {    //Object
@@ -142,6 +173,12 @@ let printUserInfo = ({ name }) => { //arrow function
 };
 printUserInfo(user);//call & pass object also
 
+
+
+
+
+
+
 let user = {
     name: "Zain",
     age: 25
@@ -150,14 +187,24 @@ let user = {
     console.log(name, age)
 })(user);   //call & pass object from here
 
+
+
+
+
+
 let result = (function ({name, rollNo}) { //IIFE:- Immediately Invoked function expression
     return name
 })("Zain");
-console.log(result);//here result is not function expression 
+console.log(result);//here result is not function expression it is store parameter
+//Not allowed
+
+
 
 (function (name, age) { //IIFE:- Immediately Invoked function expression
     console.log(name, age)
 })("Zain", 25);
+
+
 
 let res = (function (x, y) { //IIFE:- Immediately Invoked function expression
     return x + y
@@ -173,3 +220,11 @@ console.log(res);//here res is not function expression
 setTimeout(() => {
     console.log('hello world');
 }, 4000);
+
+
+
+
+let res = (function (x, y) { //IIFE:- Immediately Invoked function expression
+    return x + y
+})(3, 4);
+console.log(res);//here res is not function expression 

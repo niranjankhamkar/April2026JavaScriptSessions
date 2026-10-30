@@ -23,17 +23,17 @@ click();
 //2.Zero input but some return:
 //zero input parameter; return type : number
 function getNumber() {
-    console.log('getting number from function');
+    console.log('getting number from function');//getting number from function
     return 100;
 }
-console.log(getNumber());
+console.log(getNumber());//100
 let res = getNumber();
-console.log(res + 100);
+console.log(res + 100);//200
 
 //name:launchBrowser, type:boolean, ip param:zero
 function launchBrowser() {
     console.log('launching browser.... chrome');
-    return true;
+    return false;
 }
 let isBrowserLaunched = launchBrowser();
 console.log(isBrowserLaunched);
@@ -123,15 +123,17 @@ if (isBrowserLaunched) {
 function printing() {
     console.log('printing 1');
 }
+
 function printing(name) {
     console.log('printing 2');
     console.log('bye');
 }
-function printing(name, age) {
-    console.log('printing 3');
-    console.log('bye');
-}
 
-// printing('naveen');
+// function printing(name, age) {
+//     console.log('printing 3');
+//     console.log('bye');
+// }
+
+printing('naveen');
 // printing('naveen', 25);
-printing(); //always calling last or latest function
+// printing(); //always calling last or latest function

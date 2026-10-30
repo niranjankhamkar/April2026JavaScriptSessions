@@ -14,6 +14,9 @@
     console.log(name, age);
 })('naveen', 10);
 
+
+
+
 let result = (function (x, y) {     //here result is not function expression 
 // it is only value which is returned by the function
 // eg 'true or false' or 'number' or 'string' etc 
@@ -21,6 +24,8 @@ let result = (function (x, y) {     //here result is not function expression
     return x + y;
 })(100, 200);
 console.log(result);//300
+
+
 
 let flag = (()=>{
     console.log('hello world');

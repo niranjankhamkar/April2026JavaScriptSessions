@@ -7,7 +7,7 @@ let emp = {
     coding() {  //method
         console.log(this.name, ' is coding');
         //console.log(name);    //direct calling not allowed
-          console.log(emp.name, ' is coding');//using object name 
+          console.log(emp.name, ' is coding');//calling using object name 
     },
     testing() {     //method without parameters and return type
         console.log(this.name, ' is testing');
@@ -21,7 +21,7 @@ let emp = {
     },
     reading: () => {        //arrow function
         //console.log(this.name, 'reading method.....');    //using this. Not Allowed here
-        console.log(emp.name, 'reading method.....');
+        console.log(emp.name, 'reading method.....');//use object name
     }
 }
 
@@ -35,23 +35,29 @@ let emp = {
     emp.data();
     emp.reading();
 
+
+
+
+
 //POM
-let loginPage = {
+let loginPage = {   //object
     username: '#username',
     password: '#password',
     loginBtn: '//input[@id="login"]',
 
     doLogin(appusername, apppassword) {
-
     },
+
     forgotPwd() {
-
     },
-    getFooters() {
 
+    getFooters() {
     }
 
 };
+
+
+
 
 //object destructruing: we can extract properties from object 
 // and assign to variables in single line using destructuring
@@ -72,7 +78,6 @@ let user = {    //object
         console.log(this.address.location);
     }
 };
-
 
 let { name, address: { flat, location: { lat, long } } } = user;
  //object destructuring: we can extract properties from object
