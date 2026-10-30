@@ -5,7 +5,8 @@ console.log(10 === "10"); //false, because the type is different (number vs stri
 console.log(10 == 10); //true, because it performs type coercion
 console.log(10 == "10");//true, because it performs type coercion and converts the string "10" to the number 10 before comparison
 
-console.log(10 > 5);
+console.log(10 > 5); //true
+
 console.log(true === true);//True:Strict equality check operator
 console.log(true === 'true');// False:Strict equality check operator(boolean vs string)
 
@@ -87,5 +88,3 @@ else {
 }
 
 //switch -- case: break
-
-

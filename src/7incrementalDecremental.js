@@ -11,13 +11,13 @@ console.log(b);//1
 let x = -99;
 let y = x++;
 
-console.log(x);
-console.log(y);
+console.log(x);//-98
+console.log(y);//-99
 
 let num = 10;
 console.log(num++);//10
 
-console.log(num);
+console.log(num);//11
 
 //2. pre(before) increment: 
 //first increase and then assign

@@ -1,7 +1,7 @@
 //Template Literals : backtick : ``
 //'' "" ``
 
-let mesg = `this my js code and I love it`;//use backticks `` for template literals
+let mesg = `this is my js code and I love it`;//use backticks `` for template literals
 console.log(mesg);
 
 let address = `101 new bhuilding

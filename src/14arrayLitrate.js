@@ -1,6 +1,5 @@
 
 let products = ['macbook pro', 'imac', 'iphone 17', 'canon', 'macbook air'];//0-4: 5
-
 console.log(products);
 
 //1. index based loop:

@@ -2,7 +2,7 @@
 //data: similar data type : Homogeneous 
 //data: different data type : Hetrogenous
 let num = [1, 2, 3, 4, 5]; //5; 0-4
-console.log(num.length);
+console.log(num.length);//5
 let len = num.length;
 console.log("Hi = ", len - 1);
 console.log("Li = ", 0);
@@ -12,12 +12,12 @@ console.log(num[5]);//undefined
 console.log(num[10]);//undefined
 console.log(num[-1]);//undefined
 console.log('-------------');
-console.log(num);
+console.log(num);//[ 1, 2, 3, 4, 5 ]
 num[0] = 10;    //update the value means original value will be replaced by new value
 num[4] = 50;
-console.log(num);
+console.log(num);//[ 10, 2, 3, 4, 50 ]
 console.log('-------------');
-console.log(num);
+console.log(num);//[ 10, 2, 3, 4, 50 ]
 num[10] = 100;
 console.log(num);//[ 10, 2, 3, 4, 50, <5 empty items>, 100 ]
 console.log(num.length);//11
@@ -28,11 +28,8 @@ console.log(num.length);
 console.log('-----------');
 
 let marks = [10, 20, 30, 40];
-
 console.log(marks);
-
 marks[-1] = 5;
-
 console.log(marks);//[ 10, 20, 30, 40, '-1': 5 ]
 //-1 is not index, it is key so it will be added as key value pair in the array, 
 // it will not be counted in length of array
@@ -82,8 +79,8 @@ for (let i = number.length - 1; i >= 0; i--) {
 let pop = [];
 console.log(pop.length);//0
 pop[100] = 1000;
-console.log(pop.length);
-console.log(pop);
+console.log(pop.length);//101
+console.log(pop);   //[ <100 empty items>, 1000 ]
 for (let i = 0; i <= pop.length - 1; i++) {
     console.log(pop[i]);
 }

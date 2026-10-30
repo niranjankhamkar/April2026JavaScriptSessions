@@ -20,7 +20,7 @@ console.log(name + age + salary + isActive);
 console.log('user data ', name, age);
 
 //nested ternary operator 
-let bill = 0;
+let bill = 2;
 let flag = (bill >= 50) ? true : bill > 1 ? 'hi' : 'bye';// two conditions in one line. 
 // condition separated by ? & : <--is used to separate true(left) and false(right) part.
 // if bill is greater than or equal to 50 then flag will be true, 
@@ -30,4 +30,4 @@ console.log(flag);
 
 let age = 20;
 let name = 'xyz';
-console.log(age, '\n', name);
+console.log(age, '\n', name);  //next line

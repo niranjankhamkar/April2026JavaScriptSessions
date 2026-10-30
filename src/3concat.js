@@ -9,8 +9,8 @@ console.log(a + y);//selenium200
 console.log(x + y + a + b);//300seleniumplaywright
 console.log(a + b + x + y);//seleniumplaywright100200
 console.log(a + b + (x + y));//seleniumplaywright300
-console.log(`${a}${b}${x + y + 80}`);
-console.log(`${x}${y}`);
+console.log(`${a}${b}${x + y + 80}`);//seleniumplaywright380
+console.log(`${x}${y}`);//100200
 console.log(`${x} + ${y}`);
 console.log(`${x + y + 10}`);
 console.log(`${x + y}`);
