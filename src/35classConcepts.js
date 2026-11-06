@@ -12,8 +12,9 @@ export class Employee {
 
     //constructor: it will help us to create the object 
     // and help us to init the global vars
-    //one const.. is allowed
+    //only one constructor is allowed
     constructor(name, age, salary, isActive) {
+        console.log("Object create here & Constructor is called");
         //this.global = local  <== Formula
         this.name = name;
         this.age = age;

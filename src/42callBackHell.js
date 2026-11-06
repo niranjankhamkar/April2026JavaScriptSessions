@@ -48,6 +48,7 @@ startMachine(() => {
 //Now Promises comes to in piture to improve this things like Pyramid
 
 
+
 //give me the user infomation after 4 secs....
 function getUserData(callback) {
     console.log('fetching user from server/db....');

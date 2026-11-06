@@ -45,13 +45,13 @@ function serveCoffee() {
 }
 
 //this is a better version of writing the callback with promises - no callback hell...
-startMachine()
-    .then(() => boilWater())
-    .then(() => addCoffeePowder())
-    .then(() => pourInCup())
-    .then(() => serveCoffee())
-    .then(() => console.log('Your coffee is ready...enjoy!!'))
-    .catch((error) => console.log(error));
+// startMachine()
+//     .then(() => boilWater())
+//     .then(() => addCoffeePowder())
+//     .then(() => pourInCup())
+//     .then(() => serveCoffee())
+//     .then(() => console.log('Your coffee is ready...enjoy!!'))
+//     .catch((error) => console.log(error));
 
 //callback hell ---> promises chain----> async await concept.....
 
@@ -68,11 +68,12 @@ startMachine()
 // });
 
 
-// async function makeCoffee() {
-//     await startMachine();
-//     await boilWater();
-//     await addCoffeePowder();
-//     await pourInCup();
-//     await serveCoffee();
-//     console.log('your coffee is ready...enjoy!!');
-// };
+async function makeCoffee() {
+    await startMachine();
+    await boilWater();
+    await addCoffeePowder();
+    await pourInCup();
+    await serveCoffee();
+    console.log('your coffee is ready...enjoy!!');
+};
+makeCoffee();//calling

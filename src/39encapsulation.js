@@ -2,7 +2,7 @@
 class Employee {
     name;//public
     age; //public
-    #salary; //private varoable of the class
+    #salary; //private variable of the class
 
     constructor(name, age, salary) {
         this.name = name;
@@ -19,7 +19,7 @@ class Employee {
 }
 
 let emp = new Employee('Tom', 20, 12.33);
-console.log(emp.name, emp.age);
+console.log(emp.name, emp.age,emp.salary);//salary is undefined
 
 let s1 = emp.getSalary();//call public method. 
 //this method access the private properties of same class
@@ -29,6 +29,12 @@ emp.setSalary(23.44);//update salary
 
 s1 = emp.getSalary();
 console.log(s1);//23.44
+
+
+
+
+
+
 
 class LoginPage {
     #username;
@@ -73,6 +79,14 @@ lp.setPassword('naveen@9090');
 let newPwd = lp.getPassword();
 console.log(newPwd);
 
+
+
+
+
+
+
+
+
 class User {
     name;
     #age;
@@ -103,6 +117,11 @@ class User {
 let obj = new User('Tom', 21, 50);
 let t1 = obj.getAge();
 console.log(t1);
+
+
+
+
+
 
 class Browser {
 

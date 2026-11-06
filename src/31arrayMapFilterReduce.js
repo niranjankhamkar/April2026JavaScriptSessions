@@ -12,10 +12,13 @@ console.log(newNum);
 let sqrt = num.map(e => e * e);
 console.log(sqrt);
 
+
 let empNames = ['Uday', 'nitin', 'Tom', 'naveen', 'Poonam'];
 let namesUpper = empNames.map( e => e.toUpperCase());
-console.log(empNames);
-console.log(namesUpper);
+console.log(empNames);//[ 'Uday', 'nitin', 'Tom', 'naveen', 'Poonam' ]
+console.log(namesUpper);//[ 'UDAY', 'NITIN', 'TOM', 'NAVEEN', 'POONAM' ]
+
+
 
 //2. filter:remove from the exisitng array on the basis of given condition
 //return: new array with same length or legth can be decreased
@@ -33,7 +36,7 @@ console.log(typeof odd);
 
 let empNames = ['Uday', 'nitin', 'Tom', 'naveen', 'Poonam', 'om'];
 let longNames = empNames.filter(e => e.length > 3);
-console.log(longNames);
+console.log(longNames);//[ 'Uday', 'nitin', 'naveen', 'Poonam' ]
 
 let productData = ['apple macbook', 'apple iph', 'samsung galaxy', 'canon', 'apple air'];//5
 let finalProd = productData

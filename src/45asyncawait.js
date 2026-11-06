@@ -10,16 +10,15 @@
 async function print() {
     console.log('hello print');
 }
-
 print();
+
 
 async function getNumber() {
     return 100;
 }
+getNumber().then(t1 => console.log(t1));//calling 1
 
-getNumber().then(t1 => console.log(t1));
-
-let t1 = await getNumber();
+let t1 = await getNumber();//calling 2
 console.log(t1);
 
 
@@ -49,7 +48,7 @@ function startMachine() {
     return new Promise((resolve) => {
         setTimeout(() => {
             console.log('1. machine started');
-            resolve(true);
+            resolve(false);
         }, 2000);
     });
 }
@@ -119,7 +118,7 @@ await makeCoffee();
 //5. if in a function, you have await steps --- then that function should be async
 
 
-function pop() {
+ function pop() {   //need 'async' when use 'wait'
     console.log('hello world');
     await boilWater();
 }

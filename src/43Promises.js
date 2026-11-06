@@ -15,8 +15,8 @@ let pizzaPromise = new Promise((resolve, reject) => {
     }
 });
 pizzaPromise
-    .then((result) => console.log(result))
-    .catch((error) => console.log(error))       
+    .then((result) => console.log("result  " + result)) //resolve
+    .catch((error) => console.log("error  " + error))   //reject       
     .finally(() => console.log('close the app...'));
 //============================================================
 

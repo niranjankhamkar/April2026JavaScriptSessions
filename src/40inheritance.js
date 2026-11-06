@@ -45,20 +45,24 @@ class BMW extends Car {
 }
 
 let bmw = new BMW();
-console.log(bmw.speed);
-bmw.start();//overridden
-bmw.stop();//inherited
-bmw.refuel();//inherited
-bmw.parking();//individual
-bmw.getBilling();
+console.log(bmw.speed);//200
+bmw.start();//overridden    //BMW -- start
+bmw.stop();//inherited  //car -- stop
+bmw.refuel();//inherited    //car -- refuel
+bmw.parking();//individual  //BMW -- parking
+bmw.getBilling();//individual    //BMW -- billing
 console.log('-------------');
 
 let car = new Car();
-console.log(car.speed);
-car.start();
-car.stop();
-car.refuel();
+console.log(car.speed);//100
+car.start();//car -- start
+car.stop();//car -- stop
+car.refuel();//car -- refuel
 console.log('-------------');
+
+
+
+
 
 class Car {
     speed = 100;
@@ -67,7 +71,6 @@ class Car {
         console.log('car -- start');
         console.log(this.speed);//100
     }
-
 }
 
 class BMW extends Car {
